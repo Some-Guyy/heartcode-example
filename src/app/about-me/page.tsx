@@ -21,7 +21,7 @@ export default function Home() {
 					<Image src={Rat} width={500} height={500} alt="rat image"></Image>
 					<div className="flex flex-row gap-2"><p className="font-bold">Name:</p>Owen</div>
 					<div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
-					<div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I don't like to code</div>
+					<div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I don&apos;t like to code</div>
 				</CardContent>
 			</Card>
 		</>
