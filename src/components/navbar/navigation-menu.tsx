@@ -4,7 +4,7 @@ import { ModeToggle } from "../mode-toggle";
 
 export function NavigationBar() {
   return (
-    <NavigationMenu className="flex flex-row justify-between list-none min-w-full h-16 sticky top-0">
+    <NavigationMenu className="flex flex-row justify-between list-none min-w-full h-16 sticky top-0 backdrop-blur">
       <div className="flex flex-row">
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
