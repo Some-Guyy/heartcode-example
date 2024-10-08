@@ -3,4 +3,3 @@ export default function Home() {
 		<div>hello world this is the quiz</div>
 	);
 }
-
