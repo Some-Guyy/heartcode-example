@@ -1,32 +1,24 @@
-import Link from "next/link";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle } from "../ui/navigation-menu";
+import { NavigationMenu } from "../ui/navigation-menu";
 import { ModeToggle } from "../mode-toggle";
+import { NavigationItem, NavItem } from "./navigation-item";
+
+const navItems: NavItem[] = [
+  { navigationLink: "/", navigationDescription: "Project Heartcode" },
+  { navigationLink: "/quiz", navigationDescription: "Quiz" },
+  { navigationLink: "/about-me", navigationDescription: "About Me" },
+]
 
 export function NavigationBar() {
   return (
-    <NavigationMenu className="flex flex-row justify-between list-none min-w-full h-16 sticky top-0 backdrop-blur">
+    <NavigationMenu className="sticky top-0 list-none flex justify-between min-w-full h-[60px] backdrop-blur px-5">
       <div className="flex flex-row">
-        <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Home
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/quiz" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Quiz
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/about-me" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About me
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+        {navItems.map((navItem, index) =>
+          <NavigationItem
+            key={index}
+            navigationLink={navItem.navigationLink}
+            navigationDescription={navItem.navigationDescription}
+          />
+        )}
       </div>
       <div>
         <ModeToggle />
