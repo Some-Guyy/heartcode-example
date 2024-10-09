@@ -5,7 +5,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 
 export default function Home() {
   const headerWords: string[] = ["Don't", "Maybe", "You probably shouldn't", "Sometimes people", "My dad likes to", "I", "Never", "We like to", "We hate to"];
-  const subjectWords: string[] = ["I", "My friend Bobby", "My dad", "My uncle", "Your mum"];
+  const subjectWords: string[] = ["Some bozo", "My friend Bobby", "My dad", "My uncle", "Your mum", "That dude over there", "Bro"];
   const verbWords: string[] = ["took", "ingested", "inhaled", "digested", "consumed", "looked at"];
   const amountWords: string[] = ["a tiny amount of", "a handful of", "a moderate amount of", "a bunch of", "a shitton of", "a truckload of"];
   const drugWords: string[] = ["crack", "coke", "ice", "meth", "shrooms", "heroin", "koufu caifan", "water"];
