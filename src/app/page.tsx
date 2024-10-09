@@ -5,12 +5,12 @@ import { FlipWords } from "@/components/ui/flip-words";
 
 export default function Home() {
   const headerWords: string[] = ["Don't", "Maybe", "You probably shouldn't", "Sometimes people", "My dad likes to", "I", "Never", "We like to", "We hate to"];
-  const subjectWords: string[] = ["Some bozo", "My friend Bobby", "My dad", "My uncle", "Your mum", "That dude over there", "Bro"];
-  const verbWords: string[] = ["took", "ingested", "inhaled", "digested", "consumed", "looked at"];
-  const amountWords: string[] = ["a tiny amount of", "a handful of", "a moderate amount of", "a bunch of", "a shitton of", "a truckload of"];
-  const drugWords: string[] = ["crack", "coke", "ice", "meth", "shrooms", "heroin", "koufu caifan", "water"];
-  const dayWords: string[] = ["last month", "yesterday", "just now", "last week", "10 minutes ago", "2 days ago"];
-  const resultWords: string[] = ["puked non-stop after", "had explosive diarrhea", "won the lottery", "died", "slept and never woke again", "are still addicted to this day", "fainted on the spot", "hated it"]
+  const subjectWords: string[] = ["Some   bozo", "My   friend   Bobby", "My   dad", "My   uncle", "Your   mum", "That   dude   over   there", "Bro"];
+  const verbWords: string[] = ["took", "ingested", "inhaled", "digested", "consumed", "looked   at"];
+  const amountWords: string[] = ["a   tiny   amount   of", "a   handful   of", "a   moderate amount   of", "a   bunch   of", "a   shitton   of", "a   truckload   of"];
+  const drugWords: string[] = ["crack", "coke", "ice", "meth", "shrooms", "heroin", "koufu   caifan", "sparkling   water"];
+  const dayWords: string[] = ["last   month", "yesterday", "just   now", "last   week", "10   minutes   ago", "2   days   ago"];
+  const resultWords: string[] = ["puked   non-stop   after", "had   explosive   diarrhea", "won   the   lottery", "died", "slept   and   never   woke   again", "are   still   addicted   to   this   day", "fainted   on   the   spot", "hated   it"]
 
   return (
     <div className="flex flex-col justify-evenly h-dvh">
@@ -32,7 +32,7 @@ export default function Home() {
           <FlipWords duration={6000} words={amountWords}/>
           <FlipWords duration={6000} words={drugWords}/>
           <FlipWords duration={6000} words={dayWords}/>
-          ,&nbsp;&nbsp;and&nbsp;&nbsp;then&nbsp;&nbsp;they
+          ,&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;then&nbsp;&nbsp;&nbsp;they
           <FlipWords duration={6000} words={resultWords}/>
         </div>
       </div>
