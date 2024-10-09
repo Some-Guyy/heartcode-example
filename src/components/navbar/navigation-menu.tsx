@@ -1,6 +1,12 @@
 import { NavigationMenu } from "../ui/navigation-menu";
 import { ModeToggle } from "../mode-toggle";
 import { NavigationItem, NavItem } from "./navigation-item";
+import {
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs';
 
 const navItems: NavItem[] = [
   { navigationLink: "/", navigationDescription: "Project Heartcode" },
@@ -20,8 +26,15 @@ export function NavigationBar() {
           />
         )}
       </div>
-      <div>
+      <div className="flex flex-row">
         <ModeToggle />
+        <div className="px-2"></div>
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </div>
     </NavigationMenu>
   )
