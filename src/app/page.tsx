@@ -32,7 +32,7 @@ export default function Home() {
           <FlipWords duration={6000} words={amountWords}/>
           <FlipWords duration={6000} words={drugWords}/>
           <FlipWords duration={6000} words={dayWords}/>
-          ,&nbsp;&nbsp;and&nbsp;&nbsp;they
+          ,&nbsp;&nbsp;and&nbsp;&nbsp;then&nbsp;&nbsp;they
           <FlipWords duration={6000} words={resultWords}/>
         </div>
       </div>
