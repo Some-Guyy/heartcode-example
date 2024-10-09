@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-evenly h-dvh">
       <div className="flex flex-col items-center p-8">
-        <p className="font-bold text-5xl py-4"><FlipWords words={words}/>do drugs kids</p>
+        <div className="font-bold text-5xl py-4"><FlipWords words={words}/>do drugs kids</div>
         <p className="text-sm">drug bad</p>
       </div>
       <div className="flex flex-col items-center p-8">
