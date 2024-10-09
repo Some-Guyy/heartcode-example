@@ -20,7 +20,7 @@ export default function Home() {
 					<CardDescription>i like to eat</CardDescription>
 				</CardHeader>
 				<CardContent>
-					<Image src={Rat} width={500} height={500} alt="rat image"></Image>
+					<Image src={Rat} width={500} alt="rat image"></Image>
 					<div className="flex flex-row gap-2"><p className="font-bold">Name:</p>Owen</div>
 					<div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
 					<div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I don&apos;t like to code</div>
