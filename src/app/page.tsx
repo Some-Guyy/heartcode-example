@@ -26,7 +26,7 @@ export default function Home() {
       <div className="flex flex-col items-center p-8">
         <div><Image src={StonedCat} width={500} alt="stonedcat" /></div>
         <p className="font-bold text-4xl py-4">Why drugs are bad for helth</p>
-        <div className="text-lg mx-auto">
+        <div className="text-xl mx-auto">
           <FlipWords duration={6000} words={subjectWords}/>
           <FlipWords duration={6000} words={verbWords}/>
           <FlipWords duration={6000} words={amountWords}/>
