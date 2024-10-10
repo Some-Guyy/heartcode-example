@@ -16,6 +16,7 @@ import {
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { useToast } from "@/hooks/use-toast"
+import { insertOneUser } from "@/server/user"
 
 const formSchema = z.object({
 	username: z.string().min(2, {
@@ -23,7 +24,7 @@ const formSchema = z.object({
 	}).max(10, {
 		message: "Number must be below 11 characters"
 	}),
-	q1: z.string({
+	isDrugDealer: z.string({
 		required_error: "Please select an option"
 	})
 })
@@ -36,13 +37,13 @@ export default function Home() {
 		resolver: zodResolver(formSchema),
 		defaultValues: {
 			username: "",
-			q1: "",
+			isDrugDealer: "",
 		},
 	})
 
 	// 2. Define a submit handler.
 	function onSubmit(data: z.infer<typeof formSchema>) {
-		if (data.q1 === "yes") {
+		if (data.isDrugDealer === "yes") {
 			toast({
 				title: `Congratulations ${data.username}`,
 				description: "You are drug dealer",
@@ -53,6 +54,8 @@ export default function Home() {
 				description: "Unfortunately you not drug dealer",
 			})
 		}
+
+		insertOneUser(data.username, data.isDrugDealer === "yes")
 	}
 
 	return (
@@ -76,7 +79,7 @@ export default function Home() {
 				/>
 				<FormField
 					control={form.control}
-					name="q1"
+					name="isDrugDealer"
 					render={({ field }) => (
 						<FormItem>
 							<FormLabel>Question 2</FormLabel>
