@@ -42,7 +42,7 @@ export default function Home() {
 	})
 
 	// 2. Define a submit handler.
-	function onSubmit(data: z.infer<typeof formSchema>) {
+	async function onSubmit(data: z.infer<typeof formSchema>) {
 		if (data.isDrugDealer === "yes") {
 			toast({
 				title: `Congratulations ${data.username}`,
@@ -55,7 +55,7 @@ export default function Home() {
 			})
 		}
 
-		insertOneUser(data.username, data.isDrugDealer === "yes")
+		await insertOneUser(data.username, data.isDrugDealer === "yes")
 	}
 
 	return (
