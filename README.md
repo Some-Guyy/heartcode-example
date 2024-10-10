@@ -1,8 +1,8 @@
 # Heartcode Example
 
-An example web app about raising drug awareness. [Deployed](https://heartcode-example.vercel.app/) in Vercel.
+An example web app about raising drug awareness. [Deployed](https://heartcode-example.vercel.app/) on Vercel.
 
-The app was made when learning how to build a [Next.js](https://nextjs.org/) and [shadcn](https://ui.shadcn.com/) web app and deploy to [Vercel](https://vercel.com/) during [Project Heartcode](https://heartcode.scis.smu.edu.sg/) 2024.
+The app was made when learning how to build a [Next.js](https://nextjs.org/) and [shadcn](https://ui.shadcn.com/) web app and deploy on [Vercel](https://vercel.com/) during [Project Heartcode](https://heartcode.scis.smu.edu.sg/) 2024.
 
 ## Setup
 ### Prerequisites:
