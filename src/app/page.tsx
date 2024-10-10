@@ -19,12 +19,12 @@ export default function Home() {
         <p className="text-sm">drug bad</p>
       </div>
       <div className="flex flex-col items-center p-8">
-        <div><Image src={CatSniff} width={500} alt="catsniff" /></div>
+        <div><Image src={CatSniff} width={500} alt="catsniff" unoptimized /></div>
         <p className="font-bold text-4xl py-4">What are drugs?</p>
         <p>Drugs are a kind of ingredient known as lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
       <div className="flex flex-col items-center p-8">
-        <div><Image src={StonedCat} width={500} alt="stonedcat" /></div>
+        <div><Image src={StonedCat} width={500} alt="stonedcat" unoptimized /></div>
         <p className="font-bold text-4xl py-4">Why drugs are bad for helth</p>
         <div className="text-xl mx-auto">
           <FlipWords duration={6000} words={subjectWords}/>
