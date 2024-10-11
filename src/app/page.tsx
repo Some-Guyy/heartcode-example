@@ -11,7 +11,7 @@ export default function Home() {
   const amountWords: string[] = ["a   tiny   amount   of", "a   handful   of", "a   moderate amount   of", "a   bunch   of", "a   shitton   of", "a   truckload   of"];
   const drugWords: string[] = ["crack", "coke", "ice", "meth", "shrooms", "heroin", "koufu   caifan", "sparkling   water"];
   const dayWords: string[] = ["last   month", "yesterday", "just   now", "last   week", "10   minutes   ago", "2   days   ago"];
-  const resultWords: string[] = ["puked   non-stop   after", "had   explosive   diarrhea", "won   the   lottery", "died", "slept   and   never   woke   again", "are   still   addicted   to   this   day", "fainted   on   the   spot", "hated   it"]
+  const resultWords: string[] = ["puked   non-stop   after", "had   explosive   diarrhea", "won   the   lottery", "died", "slept   and   never   woke   again", "are   still   addicted   to   this   day", "fainted   on   the   spot"]
 
   const headerWords2 = [{text: "What"}, {text: "are"}, {text: "drugs?"}]
   const headerWords3 = [{text: "Why"}, {text: "drugs"}, {text: "are"}, {text: "bad"}, {text: "for"}, {text: "helth"}]
