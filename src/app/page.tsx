@@ -5,7 +5,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
 export default function Home() {
-  const headerWords: string[] = ["Don't", "Maybe", "You probably shouldn't", "Sometimes people", "My dad likes to", "I", "Never", "We like to", "We hate to"];
+  const headerWords: string[] = ["Don't", "Maybe don't", "You probably shouldn't", "Sometimes people", "My dad likes to", "Never", "We don't like to", "We hate to"];
   const subjectWords: string[] = ["Some   bozo", "My   friend   Bobby", "My   dad", "My   uncle", "Your   mum", "That   dude   over   there", "Bro"];
   const verbWords: string[] = ["took", "ingested", "inhaled", "digested", "consumed", "looked   at"];
   const amountWords: string[] = ["a   tiny   amount   of", "a   handful   of", "a   moderate amount   of", "a   bunch   of", "a   shitton   of", "a   truckload   of"];
