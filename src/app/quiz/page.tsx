@@ -17,6 +17,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Input } from "@/components/ui/input"
 import { useToast } from "@/hooks/use-toast"
 import { insertOneUser } from "@/server/user"
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision"
 
 const formSchema = z.object({
 	username: z.string().min(2, {
@@ -59,50 +60,52 @@ export default function Home() {
 	}
 
 	return (
-		<Form {...form}>
-			<form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-				<FormField
-					control={form.control}
-					name="username"
-					render={({ field }) => (
-						<FormItem>
-							<FormLabel>Question 1</FormLabel>
-							<FormDescription>
-								What is yo name?
-							</FormDescription>
-							<FormControl>
-								<Input placeholder="what yo nam" {...field} />
-							</FormControl>
-							<FormMessage />
-						</FormItem>
-					)}
-				/>
-				<FormField
-					control={form.control}
-					name="isDrugDealer"
-					render={({ field }) => (
-						<FormItem>
-							<FormLabel>Question 2</FormLabel>
-							<FormDescription>
-								Are you drug dealer?
-							</FormDescription>
-							<Select onValueChange={field.onChange} defaultValue={field.value}>
+		<BackgroundBeamsWithCollision>
+			<Form {...form}>
+				<form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+					<FormField
+						control={form.control}
+						name="username"
+						render={({ field }) => (
+							<FormItem>
+								<FormLabel>Question 1</FormLabel>
+								<FormDescription>
+									What is yo name?
+								</FormDescription>
 								<FormControl>
-									<SelectTrigger>
-										<SelectValue placeholder="Please select an answer" />
-									</SelectTrigger>
+									<Input placeholder="what yo nam" {...field} />
 								</FormControl>
-								<SelectContent>
-									<SelectItem value="yes">Yes</SelectItem>
-									<SelectItem value="no">No</SelectItem>
-								</SelectContent>
-							</Select>
-							<FormMessage />
-						</FormItem>
-					)}
-				/>
-				<Button type="submit">Submit</Button>
-			</form>
-		</Form>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+					<FormField
+						control={form.control}
+						name="isDrugDealer"
+						render={({ field }) => (
+							<FormItem>
+								<FormLabel>Question 2</FormLabel>
+								<FormDescription>
+									Are you drug dealer?
+								</FormDescription>
+								<Select onValueChange={field.onChange} defaultValue={field.value}>
+									<FormControl>
+										<SelectTrigger>
+											<SelectValue placeholder="Please select an answer" />
+										</SelectTrigger>
+									</FormControl>
+									<SelectContent>
+										<SelectItem value="yes">Yes</SelectItem>
+										<SelectItem value="no">No</SelectItem>
+									</SelectContent>
+								</Select>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+					<Button type="submit">Submit</Button>
+				</form>
+			</Form>
+		</BackgroundBeamsWithCollision>
 	)
 }
