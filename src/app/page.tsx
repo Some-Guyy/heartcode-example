@@ -19,25 +19,25 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-evenly h-dvh">
       <div className="flex flex-col items-center p-8">
-        <div className="font-bold text-5xl py-4"><FlipWords words={headerWords}/>do drugs kids</div>
+        <div className="font-bold text-5xl py-4"><FlipWords words={headerWords} className="z-0"/>do drugs kids</div>
         <p className="text-sm">drug bad</p>
       </div>
       <div className="flex flex-col items-center p-8">
         <div><Image src={CatSniff} width={500} alt="catsniff" unoptimized /></div>
-        <TypewriterEffect words={headerWords2} className="font-bold text-4xl py-4" />
+        <TypewriterEffect words={headerWords2} className="font-bold text-4xl py-4 z-0" />
         <p>Drugs are a kind of ingredient known as lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
       <div className="flex flex-col items-center p-8">
         <div><Image src={StonedCat} width={500} alt="stonedcat" unoptimized /></div>
-        <TypewriterEffect words={headerWords3} className="font-bold text-4xl py-4" />
+        <TypewriterEffect words={headerWords3} className="font-bold text-4xl py-4 z-0" />
         <div className="text-xl mx-auto">
-          <FlipWords duration={6000} words={subjectWords}/>
-          <FlipWords duration={6000} words={verbWords}/>
-          <FlipWords duration={6000} words={amountWords}/>
-          <FlipWords duration={6000} words={drugWords}/>
-          <FlipWords duration={6000} words={dayWords}/>
+          <FlipWords duration={6000} words={subjectWords} className="z-0"/>
+          <FlipWords duration={6000} words={verbWords} className="z-0"/>
+          <FlipWords duration={6000} words={amountWords} className="z-0"/>
+          <FlipWords duration={6000} words={drugWords} className="z-0"/>
+          <FlipWords duration={6000} words={dayWords} className="z-0"/>
           ,&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;then&nbsp;&nbsp;&nbsp;they
-          <FlipWords duration={6000} words={resultWords}/>
+          <FlipWords duration={6000} words={resultWords} className="z-0"/>
         </div>
       </div>
     </div>
