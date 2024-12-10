@@ -22,7 +22,7 @@ export function NavigationBar() {
   const currentTheme = useTheme()
 
   return (
-    <NavigationMenu className="sticky top-0 list-none flex justify-between min-w-full h-[60px] px-5">
+    <NavigationMenu className="sticky top-0 list-none flex justify-between min-w-full h-[60px] px-5 backdrop-blur-sm">
       <div className="flex flex-row">
         {navItems.map((navItem, index) =>
           <NavigationItem
