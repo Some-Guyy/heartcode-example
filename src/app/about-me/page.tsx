@@ -13,7 +13,7 @@ export default function Home() {
 						translateZ="100"
 						className="text-2xl font-bold text-neutral-600 dark:text-white"
 					>
-						hi im owen
+						hi im some guy
 					</CardItem>
 					<CardItem
 						as="p"
@@ -25,7 +25,7 @@ export default function Home() {
 					<CardItem translateZ="200" className="w-full mt-4">
 						<Image src={Rat} width={500} alt="rat image" unoptimized />
 					</CardItem>
-					<CardItem translateZ="170" className="flex flex-row gap-2 text-lg"><div className="font-bold">Name:</div> Owen</CardItem>
+					<CardItem translateZ="170" className="flex flex-row gap-2 text-lg"><div className="font-bold">Name:</div> Some Guy</CardItem>
 					<CardItem translateZ="120" className="flex flex-row gap-2 text-lg"><div className="font-bold">Major:</div> Information Systems</CardItem>
 					<CardItem translateZ="80" className="flex flex-row gap-2 text-lg"><div className="font-bold">Hobbies:</div> I don&apos;t like to code</CardItem>
 				</CardBody>
